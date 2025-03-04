@@ -1,0 +1,6 @@
+baseURL = 'https://www.todaynotfuture.top/'
+languageCode = 'en-us'
+title = 'TodayNotFuture'
+theme = 'archie'
+copyright = "© Future"
+disqusShortname = "yourDisqusShortname"
