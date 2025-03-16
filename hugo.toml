@@ -1,6 +1,38 @@
-baseURL = 'https://www.todaynotfuture.top/'
-languageCode = 'en-us'
-title = 'TodayNotFuture'
-theme = 'archie'
-copyright = "© Future"
-disqusShortname = "yourDisqusShortname"
+baseURL = 'https://taylorpzreal.github.io/knowledge'
+# https://www.todaynotfuture.top/'
+title = "熵减屋"
+languageCode = 'zh'
+defaultContentLanguage = 'zh'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.renderHooks]  
+      [markup.goldmark.renderHooks.image]
+        enableDefault = true
+
+[params]
+  math = true
+
+BookSection = 'docs'
+BookSearch = true
+BookComments = true
+
+[module]
+  [[module.mounts]]
+    source = 'content'
+    target = 'content'
+
+[frontmatter]
+  date = ['date', 'publishdate', 'pubdate', 'published', 'lastmod', 'modified']
+  expiryDate = ['expirydate', 'unpublishdate']
+  lastmod = [':git', 'lastmod', 'modified', 'date', 'publishdate', 'pubdate', 'published']
+  publishDate = ['publishdate', 'pubdate', 'published', 'date']
+
