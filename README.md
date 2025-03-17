@@ -18,6 +18,11 @@ hugo version
 hugo server --buildDrafts
 ```
 
+```sh
+# add new content
+hugo new content content/posts/openai-agent.md 
+```
+
 ## TodayNotFuture
 
 WebSite <https://www.todaynotfuture.top/>
