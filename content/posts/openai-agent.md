@@ -3,6 +3,10 @@ title: "Openai Agent"
 date: 2025-03-17T14:48:03+08:00
 # bookComments: false
 # bookSearchExclude: false
+tags: 
+ - Agent
+ - OpenAI
+categories: AI
 ---
 
 # OpenAI 新功能发布
