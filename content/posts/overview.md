@@ -2,7 +2,8 @@
 author: "Zeke"
 date: 2025-03-16
 title: Hugo 概述
-weight: 1
+tags: 'hugo'
+categories: 'inbox'
 ---
 
 ---

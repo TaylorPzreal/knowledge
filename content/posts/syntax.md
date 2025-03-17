@@ -2,7 +2,8 @@
 author: "Zeke"
 date: 2025-03-15
 title: Hugo 语法
-weight: 2
+tags: 'hugo'
+categories: 'inbox'
 ---
 
 Hugo的语法主要涉及 **模板引擎**、**内容格式（Front Matter）** 和 **短代码（Shortcodes）**，以下是详细的语法介绍：

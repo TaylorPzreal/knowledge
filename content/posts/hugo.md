@@ -1,6 +1,8 @@
 ---
 title: "Hugo"
 date: 2025-03-17T22:50:19+08:00
+tags: 'hugo'
+categories: 'inbox'
 # bookComments: false
 # bookSearchExclude: false
 ---

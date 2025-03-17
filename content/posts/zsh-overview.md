@@ -2,6 +2,8 @@
 title = 'Zsh Overview'
 date = 2024-04-13T14:44:23+08:00
 draft = false
+tags = 'shell'
+categories = 'environment'
 +++
 
 ## 一、Introduction
