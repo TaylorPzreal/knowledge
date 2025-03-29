@@ -9,6 +9,8 @@ title: "AI Term"
 # bookSearchExclude: false
 ---
 
+# AI Term（AI术语）
+
 1. Agent（智能体）一种以大语言模型驱动的人工智能程序，能够自主感知环境并采取行动以实现目标，拥有自主推理决策、规划行动、检索记忆、选择工具执行任务等能力
 2. AI Hallucination（AI幻觉）AI生成的内容与现实世界的知识不一致或与实际数据显著不同的现象
 3. Application Program Interface（API，应用程序接口）应用程序交互所需的一组定义和协议。API描述了程序必须使用的方法和数据格式，以与其他软件进行通信。比如，OpenAI允许开发人员通过API使用GPT-4和ChatGPT
