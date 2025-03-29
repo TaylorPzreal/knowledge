@@ -25,16 +25,16 @@ sudo profiles show -type enrollment
 
 ![show type](images/macos-show-type-a.png)
 
+> 此命令可以返回不同的状态，例如“No MDM enrollment”（未进行 MDM 注册）、“MDM enrolled”（已进行 MDM 注册）、“DEP Enrolled”（已进行 DEP 注册）等 。
 
 ```sh
-# 此命令可以返回不同的状态，例如“No MDM enrollment”（未进行 MDM 注册）、“MDM enrolled”（已进行 MDM 注册）、“DEP Enrolled”（已进行 DEP 注册）等 。
 profiles status -type enrollment
 ```
 
-![show type](images/macos-show-type-b.png)
+![status type](images/macos-show-type-b.png)
 
 
-## 移除
+## 配置
 
 当标准的 MDM 描述文件移除方法无效时，通常是因为设备受到了更高级别的管理，例如设备监管或通过 Apple 的设备注册计划（DEP）、Apple 商务管理（ABM）或 Apple 校园教务管理（ASM）进行的注册。
 
@@ -60,18 +60,6 @@ sudo rm -rf *
 sudo mkdir Settings
 sudo touch Settings/.profilesAreInstalled
 ```
-
-```sh
-sudo mkdir /System/Library/LaunchAgentsDisabled
-sudo mkdir /System/Library/LaunchDaemonsDisabled
-sudo mv /System/Library/LaunchAgents/com.apple.ManagedClientAgent.agent.plist /System/Library/LaunchAgentsDisabled
-sudo mv /System/Library/LaunchAgents/com.apple.ManagedClientAgent.enrollagent.plist /System/Library/LaunchAgentsDisabled
-sudo mv /System/Library/LaunchDaemons/com.apple.ManagedClient.cloudconfigurationd.plist /System/Library/LaunchDaemonsDisabled
-sudo mv /System/Library/LaunchDaemons/com.apple.ManagedClient.enroll.plist /System/Library/LaunchDaemonsDisabled
-sudo mv /System/Library/LaunchDaemons/com.apple.ManagedClient.plist /System/Library/LaunchDaemonsDisabled
-sudo mv /System/Library/LaunchDaemons/com.apple.ManagedClient.startup.plist /System/Library/LaunchDaemonsDisabled
-```
-
 
 ### 步骤4：修改 hosts 文件以阻止重新注册
 
