@@ -3,7 +3,9 @@ title: "Rust IO Demo"
 date: 2024-06-17
 tags: 
  - Rust
-categories: Fullstack
+ - Language
+categories: 
+ - Fullstack
 # bookComments: false
 # bookSearchExclude: false
 ---
