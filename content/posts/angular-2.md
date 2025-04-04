@@ -1,6 +1,6 @@
 ---
 title: "Angular 2"
-date: 2025-04-04T11:57:16+08:00
+date: 2020-11-25
 tags: 
  - Angular
 categories: Framework
