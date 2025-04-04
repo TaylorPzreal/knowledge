@@ -41,7 +41,7 @@ document.addEventListener("contextmenu", (event) => event.preventDefault());
 
 值得一提的是，CSS 也可以通过 `pointer-events: none;` 属性禁用右键单击功能。然而，这种方法的一个主要缺点是它也会禁用所有其他指针交互，例如点击，这在许多情况下是不可取的。因此，对于禁用右键单击上下文菜单，JavaScript 通常是更实用的选择。
 
-阻止右键单击通常被用作防止用户轻松访问文本和图像的“复制”选项的一种手段。
+阻止右键单击通常被用作防止用户轻松访问文本和图像的"复制"选项的一种手段。
 
 ### C. 阻止键盘复制快捷键（`Ctrl+C` 等）
 
@@ -123,11 +123,11 @@ IP 地址虽然可以提供关于用户大致位置的信息，但由于动态 I
 
 5. 将网页另存为 PDF 文件也是一种常见的绕过复制保护的方法。大多数现代浏览器都允许用户将当前网页打印为 PDF 文件。一旦网页保存为 PDF，用户就可以使用 PDF 阅读器选择和复制文本，而通常不会受到原始网页上存在的复制限制。
 
-6. 许多现代浏览器（例如 Chrome、Firefox、Edge 和 Opera）都提供“阅读模式”，该模式通常会剥离网页的样式和脚本，只留下主要的文本内容。启用阅读模式后，用户通常可以轻松地选择和复制文本，即使原始网页禁用了这些功能。
+6. 许多现代浏览器（例如 Chrome、Firefox、Edge 和 Opera）都提供"阅读模式"，该模式通常会剥离网页的样式和脚本，只留下主要的文本内容。启用阅读模式后，用户通常可以轻松地选择和复制文本，即使原始网页禁用了这些功能。
 
 7. 一个简单的技巧，例如在右键单击时按住 `Shift` 键，有时也可以绕过某些 JavaScript 实现的上下文菜单禁用。这会强制显示浏览器的默认上下文菜单，而忽略网站的自定义行为。
 
-8. 最后，精通技术的用户可以使用浏览器开发者工具（通常通过按 `F12` 或右键单击并选择 **“检查元素”** 来访问）来直接检查和操作网页的文档对象模型（DOM）。通过使用开发者工具，用户可以识别并删除阻止复制的特定 HTML 元素或属性，从而有效地绕过复制保护。
+8. 最后，精通技术的用户可以使用浏览器开发者工具（通常通过按 `F12` 或右键单击并选择 **"检查元素"** 来访问）来直接检查和操作网页的文档对象模型（DOM）。通过使用开发者工具，用户可以识别并删除阻止复制的特定 HTML 元素或属性，从而有效地绕过复制保护。
 
 ### B. 对抗决心用户的有效性
 
@@ -199,3 +199,83 @@ DRM 技术可以用于保护通过您的网站提供的视频、电子书和其�
 ## VII. 结论
 
 纯粹的技术客户端解决方案对于决心要复制内容的用户来说通常是无效的。因此，网站所有者应该优先考虑用户体验和可访问性，以维持积极的网站环境。建议采用多方面的方法，可能包括版权注册和清晰的使用条款等法律措施，对视觉内容使用水印等不太具有侵入性的技术威慑，以及内容许可策略以管理授权使用。最终，专注于提供价值和积极的用户体验可以减少用户在未经许可的情况下复制内容的动机。网站所有者应根据其网站的具体需求和受众做出关于内容保护的明智决定。在许多情况下，与其尝试使用无效的技术措施来完全阻止复制，不如侧重于法律保护和尊重用户体验的策略。
+
+## VIII. 内容保护工具和软件推荐
+
+### A. 水印工具
+1. **Digimarc** (https://www.digimarc.com/)
+   - 提供数字水印解决方案，可以在图像和文档中嵌入不可见的标识信息
+   - 支持批量处理，适用于企业级应用
+
+2. **Watermarkly** (https://watermarkly.com/)
+   - 在线水印工具，支持图片和PDF文件
+   - 提供多种水印样式和批量处理功能
+
+3. **iWatermark** (https://www.scriptsoftware.com/iwatermark/)
+   - 专业的图片水印软件，支持Windows和Mac
+   - 提供批量处理、元数据保护和多种水印样式
+
+### B. DRM解决方案
+1. **Widevine** (https://www.widevine.com/)
+   - Google的DRM解决方案，用于保护视频内容
+   - 支持多种设备和平台
+
+2. **PlayReady** (https://www.microsoft.com/playready/)
+   - 微软的DRM解决方案，适用于视频、音频和电子书
+   - 提供跨平台支持
+
+3. **FairPlay** (https://developer.apple.com/streaming/fps/)
+   - Apple的DRM解决方案，用于保护iOS和macOS上的内容
+   - 与Apple生态系统深度集成
+
+### C. 反爬虫和内容保护工具
+1. **Cloudflare** (https://www.cloudflare.com/)
+   - 提供全面的网站保护，包括DDoS防护、反爬虫和内容保护
+   - 支持自定义规则和高级安全功能
+
+2. **Imperva** (https://www.imperva.com/)
+   - 企业级网站安全解决方案
+   - 提供高级反爬虫、DDoS防护和内容保护功能
+
+3. **Distil Networks** (https://www.imperva.com/products/bot-management/)
+   - 专注于反爬虫和机器人防护
+   - 提供实时分析和行为分析
+
+### D. 内容追踪和监控工具
+1. **Copyscape** (https://www.copyscape.com/)
+   - 在线内容抄袭检测工具
+   - 可以监控网站内容是否被复制
+
+2. **PlagiarismCheck** (https://plagiarismcheck.org/)
+   - 专业的抄袭检测工具
+   - 支持多种文档格式和语言
+
+3. **Grammarly** (https://www.grammarly.com/)
+   - 提供内容原创性检查功能
+   - 支持多种语言和文档类型
+
+### E. 高级内容保护工具
+1. **Adobe Experience Manager** (https://www.adobe.com/products/experience-manager.html)
+   - 企业级内容管理系统
+   - 提供高级内容保护、权限管理和数字资产管理功能
+
+2. **Bynder** (https://www.bynder.com/)
+   - 数字资产管理平台
+   - 提供内容保护、水印和访问控制功能
+
+3. **Brandfolder** (https://brandfolder.com/)
+   - 品牌资产管理平台
+   - 提供内容保护、使用追踪和权限管理
+
+### F. 开源工具
+1. **Tesseract OCR** (https://github.com/tesseract-ocr/tesseract)
+   - 开源的OCR引擎
+   - 可用于开发自定义内容保护解决方案
+
+2. **OpenDRM** (https://github.com/opendrm)
+   - 开源的DRM解决方案
+   - 提供基本的内容保护功能
+
+3. **PDF.js** (https://github.com/mozilla/pdf.js)
+   - Mozilla的PDF查看器
+   - 可用于实现自定义的PDF内容保护
