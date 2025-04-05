@@ -44,9 +44,17 @@ pstree                       # 以树状图显示进程
 
 #### htop demo
 
+```sh
+brew install htop
+```
+
 ![htop](images/htop-demo.png)
 
 #### btop demo
+
+```sh
+brew install btop
+```
 
 ![btop](images/btop-demo.png)
 
@@ -114,6 +122,33 @@ pidstat -p PID 1            # 监控特定进程的资源使用
 strace -p PID               # 跟踪进程的系统调用
 ```
 
+## 进程监控工具推荐
+
+### 基础工具
+
+- `pidof` - 查找指定程序名的进程 ID
+- `pkill` - 通过进程名终止进程
+- `kill` - 通过进程 ID 终止进程
+
+### 系统监控工具
+
+1. `top` - 经典的实时系统监控工具
+2. `htop` - 交互式进程查看器，提供彩色界面和更多功能
+3. `btop` - 现代化的系统资源监控工具，支持主题定制
+4. `bashtop` - 基于 Bash 的系统监控工具，轻量级
+5. `bpytop` - Python 实现的系统监控工具，功能丰富
+6. `glances` - 跨平台的系统监控工具，支持多种输出格式
+
+### 工具特点对比
+
+| 工具名称 | 语言 | 特点 | 安装方式 |
+|---------|------|------|----------|
+| htop | C | 交互式界面，支持鼠标操作 | `brew install htop` |
+| btop | C++ | 现代化界面，支持主题 | `brew install btop` |
+| bashtop | Bash | 轻量级，纯 Bash 实现 | <https://github.com/aristocratos/bashtop> |
+| bpytop | Python | 功能丰富，支持插件 | `brew install bpytop` |
+| glances | Python | 跨平台，支持多种输出 | `brew install glances` |
+
 ## 实用技巧
 
 1. 查找占用 CPU 最高的进程：
@@ -144,3 +179,8 @@ lsof -p PID
 
 - [Linux 进程管理](http://wuchong.me/blog/2014/07/24/linux-process-manage/)
 - [Linux 进程管理详解](https://www.cnblogs.com/peida/archive/2012/12/19/2824418.html)
+- <https://www.freecodecamp.org/news/the-best-linux-tutorials/>
+- <https://guide.freecodecamp.org/linux>
+- Command Line Crash Course <https://www.youtube.com/watch?v=yz7nYlnXLfE>
+
++

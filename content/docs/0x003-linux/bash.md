@@ -182,6 +182,8 @@ sed -i '' 's/\t/[[:space:]]{2}/g' nginx.conf
 - `Ctrl+L` 清屏
 - `Ctrl+D` 退出终端
 - `Tab` 命令补全
+- `Ctrl+B` 向后移动一个字符
+- `Ctrl+F` 向前移动一个字符
 
 ## 调试技巧
 

@@ -14,14 +14,15 @@ title: "Development Software"
 > for macOS development
 
 Review
+
 1. 2022/07/22
 2. 2023/03/18
 3. 2024/08/19
 4. 2024/11/28
 5. 2025/04/04
 
-
 ## App Store
+
 - [x] Blackmagic (Disk Speed Test) - 磁盘性能测试工具，用于测试存储设备的读写速度
 - [x] GoodNotes5 - 强大的手写笔记应用，支持PDF注释和手写识别
 - [x] Eudic - 欧路词典，专业的英语学习工具
@@ -35,9 +36,10 @@ Review
 - [ ] 有道云笔记 - 网易出品的云笔记应用
 
 ## Internet Software
+
 - [x] Homebrew - macOS包管理器，简化软件安装过程 <https://brew.sh/>
 - [x] vim - 强大的文本编辑器，支持高度定制 <https://www.vim.org/>
-- [x] Zellij - 现代化的终端复用器，替代tmux <https://zellij.dev/>
+- [x] Zellij - 现代化的终端复用器，替代tmux/screen <https://zellij.dev/>
 - [x] VSCode - 微软开发的轻量级代码编辑器，支持丰富的扩展 <https://code.visualstudio.com/>
 - [x] Gnupg - GNU隐私保护工具，用于加密和签名 <https://gnupg.org/>
 - [x] KeyCastr - 键盘按键可视化工具，适合录制教程 <https://github.com/keycastr/keycastr>
@@ -77,6 +79,7 @@ Review
 ## Additional Powerful Development Tools
 
 ### Development & Debugging
+
 - [ ] DataGrip - 数据库IDE，支持多种数据库 <https://www.jetbrains.com/datagrip/>
 - [ ] Warp - 现代化的终端 <https://www.warp.dev/>
 - [ ] Fig - 终端自动补全工具 <https://fig.io/>
@@ -85,6 +88,7 @@ Review
 - [ ] Dash - API文档浏览器 <https://kapeli.com/dash>
 
 ### Productivity
+
 - [ ] Alfred - 效率工具，支持工作流 <https://www.alfredapp.com/>
 - [ ] Bartender - 菜单栏管理工具 <https://www.macbartender.com/>
 - [ ] CleanShot X - 截图和录屏工具 <https://cleanshot.com/>
@@ -95,6 +99,7 @@ Review
 - [ ] Raycast - 启动器和自动化工具 <https://www.raycast.com/>
 
 ### Development Environment
+
 - [ ] asdf - 多语言版本管理工具 <https://asdf-vm.com/>
 - [ ] direnv - 环境变量管理工具 <https://direnv.net/>
 - [ ] kubectl - Kubernetes命令行工具 <https://kubernetes.io/docs/tasks/tools/>
@@ -103,6 +108,7 @@ Review
 - [ ] ansible - 自动化运维工具 <https://www.ansible.com/>
 
 ### Security
+
 - [ ] 1Password - 密码管理工具 <https://1password.com/>
 - [ ] Bitwarden - 开源密码管理工具 <https://bitwarden.com/>
 - [ ] Authy - 双因素认证工具 <https://authy.com/>
