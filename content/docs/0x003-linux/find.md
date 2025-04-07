@@ -14,6 +14,7 @@ title: "Find"
 Review
 
 1. 2019/12/24
+2. 2025/04/06
 
 `find` 是一个强大的文件搜索工具，可以根据各种条件查找文件。
 
@@ -92,6 +93,9 @@ find . -name "*.txt" -exec cat {} \;
 
 # 使用 xargs 处理找到的文件
 find . -name "*.log" | xargs rm
+
+# 
+find . -type d -ipath "node_modules" | xargs rm -rf
 ```
 
 ### 权限相关

@@ -45,19 +45,19 @@ rsync [选项] 源文件 目标文件
 
 ## 常用选项
 
-| 选项 | 说明 |
-|------|------|
-| -a | 归档模式，相当于 -rlptgoD |
-| -v | 显示详细输出 |
-| -z | 传输时压缩数据 |
-| -h | 以人类可读格式显示数字 |
-| -e | 指定远程 shell（通常为 ssh） |
-| -r | 递归复制目录 |
-| --progress | 显示传输进度 |
-| --delete | 删除目标端多余文件 |
-| --exclude | 排除特定文件或目录 |
-| --include | 包含特定文件或目录 |
-| -P | 显示进度并支持断点续传 |
+| 选项         | 说明                         |
+| ------------ | ---------------------------- |
+| -a           | 归档模式，相当于 -rlptgoD    |
+| -v           | 显示详细输出                 |
+| -z           | 传输时压缩数据               |
+| -h           | 以人类可读格式显示数字       |
+| -e           | 指定远程 shell（通常为 ssh） |
+| -r           | 递归复制目录                 |
+| `--progress` | 显示传输进度                 |
+| `--delete`   | 删除目标端多余文件           |
+| `--exclude`  | 排除特定文件或目录           |
+| `--include`  | 包含特定文件或目录           |
+| -P           | 显示进度并支持断点续传       |
 
 > 归档模式 (archive mode), archive mode allows copying files recursively and it also preserves symbolic links, file permissions, user & group ownerships and timestamps.
 
