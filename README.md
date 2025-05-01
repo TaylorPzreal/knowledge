@@ -23,6 +23,12 @@ hugo server --buildDrafts
 hugo new content content/posts/openai-agent.md 
 ```
 
+### Build
+
+```sh
+hugo --minify --environment production
+```
+
 ## TodayNotFuture
 
 WebSite <https://www.todaynotfuture.top/>

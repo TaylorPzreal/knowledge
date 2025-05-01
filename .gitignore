@@ -4,3 +4,4 @@ resources
 .DS_Store
 .crossnote
 /rechange.sh
+.vscode

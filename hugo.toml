@@ -1,5 +1,7 @@
 baseURL = 'https://taylorpzreal.github.io/knowledge'
 # https://www.todaynotfuture.top/'
+#baseURL = 'https://www.orientmorning.com'
+
 title = "AI Time"
 languageCode = 'zh'
 defaultContentLanguage = 'zh'
