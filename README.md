@@ -31,6 +31,6 @@ hugo --minify --environment production
 
 ## TodayNotFuture
 
-WebSite <https://www.todaynotfuture.top/>
+WebSite <https://www.ohye.xyz/>
 
 Development with Hugo
