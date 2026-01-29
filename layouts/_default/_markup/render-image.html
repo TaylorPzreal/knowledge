@@ -6,14 +6,31 @@
 
 {{- define "portable-image" -}}
   {{- $isRemote := or (in .Destination "://") (strings.HasPrefix .Destination "//") }}
+  {{- $finalDestination := .Destination }}
   {{- if not $isRemote }}
-    {{- $path := print .Page.File.Dir .Destination }}
+    {{- $path := "" }}
+    
     {{- if strings.HasPrefix .Destination "/" }}
       {{- $path = print "/static" .Destination }}
+    {{- else if strings.HasPrefix .Destination "images/" }}
+      {{- $path = print "/static/" .Destination }}
+    {{- else if strings.HasPrefix .Destination "./assets/" }}
+      {{- $assetPath := strings.TrimPrefix "./assets/" .Destination }}
+      {{- $path = print "content/" .Page.File.Dir "assets/" $assetPath }}
+      {{- $sectionPage := .Page }}
+      {{- if not .Page.IsSection }}
+        {{- if .Page.Parent }}
+          {{- $sectionPage = .Page.Parent }}
+        {{- end }}
+      {{- end }}
+      {{- $finalDestination = print $sectionPage.RelPermalink "assets/" $assetPath }}
+    {{- else }}
+      {{- $path = print "content/" .Page.File.Dir .Destination }}
     {{- end }}
-    {{- if not (fileExists $path) }}
-      {{- warnf "Image '%s' not found in '%s'" .Destination .Page.File }}
+    
+    {{- if and $path (not (fileExists $path)) }}
+      {{- warnf "Image '%s' not found in '%s' (checked path: '%s')" .Destination .Page.File $path }}
     {{- end }}
   {{- end }}
-  <img src="{{ .Destination | safeURL | relURL }}" alt="{{ .Text }}" {{ with .Title }}title="{{ . }}"{{ end }}/>
+  <img src="{{ if $finalDestination }}{{ $finalDestination | safeURL | relURL }}{{ else }}{{ .Destination | safeURL | relURL }}{{ end }}" alt="{{ .Text }}" {{ with .Title }}title="{{ . }}"{{ end }}/>
 {{- end -}}
