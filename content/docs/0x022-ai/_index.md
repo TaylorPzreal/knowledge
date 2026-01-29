@@ -1,7 +1,7 @@
 ---
 weight: 1
 bookFlatSection: false
-title: "AI Knowledge"
+title: "0x022-AI Knowledge"
 ---
 
 # AI Time
