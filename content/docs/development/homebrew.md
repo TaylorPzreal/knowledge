@@ -18,6 +18,7 @@ title: "Homebrew"
 3. 2021/08/01
 4. 2023/10/29
 5. 2025/03/15
+6. 2026-01-31
 
 
 > !Caution
@@ -30,6 +31,8 @@ https://brew.sh/
 https://github.com/Homebrew/brew
 The missing package manager for macOS (or Linux)
 
+Rust 实现的 brew（更快更高效）
+https://github.com/lucasgelfond/zerobrew
 
 ## 安装配置（2025/03/16）
 

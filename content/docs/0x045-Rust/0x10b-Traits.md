@@ -94,6 +94,18 @@ fn main() {
 ```
 
 
+## 常用 Trait 速览
+
+| Trait | 用途 |
+|-------|------|
+| `Clone` | `.clone()` 显式复制；可多次调用。 |
+| `Copy` | 按位复制，赋值时自动复制不 move；为 marker，依赖 `Clone`。整数、bool、char、仅含 Copy 的 tuple 等实现 Copy。 |
+| `Send` | 类型可安全地传到其他线程（所有权转移）。 |
+| `Sync` | `&T` 可安全在线程间共享；`T: Sync` 等价于 `&T: Send`。 |
+| `Default` | `T::default()` 或 `Default::default()` 提供默认值。 |
+| `From` / `Into` | 类型转换；实现 `From` 则 `Into` 自动生成。 |
+| `Debug` / `Display` | 格式化输出；`{:?}` 与 `{}`，前者可派生。 |
+
 ## Trait Bounds
 Trait Bounds in Rust is a way of specifying that a generic must satisfy a certain trait. Essentially, a trait bound says something like: “T must support the following behavior”. In other words, they allow you to use generic type parameters in your function definitions to specify that the function can accept any type as a parameter, as long as that type implements a certain trait. For instance, `T: Display` would constitute a trait bound, requiring the generic `T` to implement the `Display` trait.
 
